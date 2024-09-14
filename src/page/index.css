@@ -3,7 +3,7 @@
     Ubuntu, "Helvetica Neue", Helvetica, Arial, "PingFang SC",
     "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei",
     "Source Han Sans CN", sans-serif;
-  --rpx: 100vw / 430;
+  --rpx: 100vw / 400;
 }
 
 .main-container {
