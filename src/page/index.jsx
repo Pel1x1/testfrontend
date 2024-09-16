@@ -1,16 +1,30 @@
 import React from 'react';
 import './index.css';
+import { useState } from 'react';
+
 
 export default function Main() {
+
+  const [selected, setSelected] = useState('Wallet');
+
+  const handleClick = (option) => {
+    setSelected(option);
+  };
+
+
   return (
     <div className='main-container'>
       <div className='flex-row-ba'>
-        <div className='rectangle'>
-          <button className='rectangle-1'>
-            <span className='wallet'>Wallet</span>
-          </button>
-          <span className='contest'>Contest</span>
+
+        <div className="switcher">
+          <div className={`option ${selected === 'Contest' ? 'selected' : ''}`} onClick={() => handleClick('Contest')}>
+              Contest
+          </div>
+          <div className={`option ${selected === 'Wallet' ? 'selected' : ''}`} onClick={() => handleClick('Wallet')}>
+              Wallet
+          </div>
         </div>
+
         <div className='regroup'>
           <button className='group' />
           <button className='vector' />

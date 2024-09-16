@@ -1,11 +1,12 @@
 {
-  "name": "ocw",
+  "name": "app",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "dotenv": "^16.4.5",
     "node-telegram-bot-api": "^0.66.0",
     "nodemon": "^3.1.4",
     "react": "^18.3.1",

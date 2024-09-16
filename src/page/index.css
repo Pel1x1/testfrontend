@@ -41,8 +41,17 @@ button {
   margin: calc(54 * var(--rpx)) 0 0 calc(31 * var(--rpx));
   z-index: 14;
 }
-.rectangle {
+
+
+
+.switcher {
+  display: flex;
   position: absolute;
+  background-color: #f0f0f0;
+  padding: 5px;
+  top: 0;
+  justify-content: space-between;
+  left: calc(121 * var(--rpx));
   width: calc(119 * var(--rpx));
   height: calc(22 * var(--rpx));
   top: 0;
@@ -52,52 +61,44 @@ button {
   overflow: hidden;
   border-radius: calc(12 * var(--rpx));
 }
-.rectangle-1 {
-  position: absolute;
-  width: calc(56 * var(--rpx));
-  height: calc(22 * var(--rpx));
-  top: 0;
-  left: calc(63 * var(--rpx));
+
+.option {
+  flex: 1;
+  text-align: center;
+  padding: 10px 0;
+
+  align-items: flex-start;
+  justify-content: flex-start;
   cursor: pointer;
-  background: #545353;
-  border: none;
-  z-index: 4;
   border-radius: calc(12 * var(--rpx));
-}
-.wallet {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  position: absolute;
-  height: calc(12 * var(--rpx));
-  top: calc(5 * var(--rpx));
-  left: calc(12 * var(--rpx));
-  color: #ffffff;
+  color: #959595;
+
+
+
   font-family: Montserrat, var(--default-font-family);
+  transition: background-color 0.3s;
+  transition: color 0.2s;
+
   font-size: calc(10 * var(--rpx));
   font-weight: 400;
   line-height: calc(12 * var(--rpx));
-  text-align: left;
-  white-space: nowrap;
+  text-align: center;
+
+  
   z-index: 5;
-}
-.contest {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  position: absolute;
-  height: calc(12 * var(--rpx));
-  top: calc(5 * var(--rpx));
-  left: calc(12 * var(--rpx));
-  color: #e1e1e1;
-  font-family: Montserrat, var(--default-font-family);
-  font-size: calc(10 * var(--rpx));
-  font-weight: 400;
-  line-height: calc(12 * var(--rpx));
-  text-align: left;
   white-space: nowrap;
-  z-index: 3;
+
 }
+
+.option.selected {
+  background-color: #545454;
+  color: #ffffff;
+}
+
+
+
+
+
 .regroup {
   display: flex;
   align-items: center;
@@ -113,7 +114,7 @@ button {
   flex-shrink: 0;
   position: relative;
   cursor: pointer;
-  width: calc(15 * var(--rpx));
+  width: calc(16 * var(--rpx));
   height: calc(17 * var(--rpx));
   background: url(../assets/images/bell_icon.png)
     no-repeat center;
@@ -140,8 +141,8 @@ button {
 }
 .icon {
   position: absolute;
-  width: calc(18 * var(--rpx));
   cursor: pointer;
+  width: calc(18 * var(--rpx));
   height: calc(14 * var(--rpx));
   top: calc(5 * var(--rpx));
   left: calc(-1 * var(--rpx));
