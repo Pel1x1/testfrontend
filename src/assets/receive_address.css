@@ -1,0 +1,131 @@
+:root {
+  --default-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Ubuntu, "Helvetica Neue", Helvetica, Arial, "PingFang SC",
+    "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei",
+    "Source Han Sans CN", sans-serif;
+  --rpx: 100vw / 430;
+}
+
+.main-container {
+  overflow: hidden;
+}
+
+.main-container,
+.main-container * {
+  box-sizing: border-box;
+}
+
+input,
+select,
+textarea,
+button {
+  outline: 0;
+}
+
+.main-container {
+  position: relative;
+  width: calc(430 * var(--rpx));
+  height: calc(555 * var(--rpx));
+  margin: 0 auto;
+  font-size: 0px;
+  background: #000000;
+  overflow: hidden;
+}
+.receiving-address {
+  display: block;
+  position: relative;
+  height: calc(33 * var(--rpx));
+  margin: calc(70 * var(--rpx)) 0 0 calc(30 * var(--rpx));
+  color: #ffffff;
+  font-family: Montserrat, var(--default-font-family);
+  font-size: calc(25 * var(--rpx));
+  font-weight: 700;
+  line-height: calc(32.63999938964844 * var(--rpx));
+  text-align: left;
+  white-space: nowrap;
+  z-index: 1;
+}
+.enter-wallet-name {
+  display: block;
+  position: relative;
+  height: calc(26 * var(--rpx));
+  margin: calc(5 * var(--rpx)) 0 0 calc(30 * var(--rpx));
+  color: #6d6d6d;
+  font-family: Montserrat, var(--default-font-family);
+  font-size: calc(15 * var(--rpx));
+  font-weight: 700;
+  line-height: calc(26 * var(--rpx));
+  text-align: left;
+  white-space: nowrap;
+  z-index: 2;
+}
+.rectangle {
+  position: relative;
+  width: calc(93 * var(--rpx));
+  height: calc(33 * var(--rpx));
+  margin: calc(15 * var(--rpx)) 0 0 calc(297 * var(--rpx));
+  cursor: pointer;
+  background: #1e1e1e;
+  border: none;
+  z-index: 5;
+  border-radius: calc(34 * var(--rpx));
+}
+.paste {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  height: calc(17 * var(--rpx));
+  top: calc(8 * var(--rpx));
+  left: calc(34 * var(--rpx));
+  color: #ffffff;
+  font-family: Montserrat, var(--default-font-family);
+  font-size: calc(14 * var(--rpx));
+  font-weight: 700;
+  line-height: calc(17 * var(--rpx));
+  text-align: left;
+  white-space: nowrap;
+  z-index: 7;
+}
+.vector {
+  position: absolute;
+  width: 13.98%;
+  height: 39.39%;
+  top: 30.3%;
+  left: 18.28%;
+  background: url(../assets/images/f48bc375-8b9c-49e4-9c95-36398f2b0282.png)
+    no-repeat center;
+  background-size: 100% 100%;
+  z-index: 6;
+}
+.line {
+  position: relative;
+  width: calc(370.00146484375 * var(--rpx));
+  height: calc(11 * var(--rpx));
+  margin: calc(13.5 * var(--rpx)) 0 0 calc(29.99951171875 * var(--rpx));
+  background: url(../assets/images/7614b63f-0923-439d-bc18-d2164b1bcfe8.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 4;
+}
+.group {
+  position: absolute;
+  width: 7.44%;
+  height: 4.86%;
+  top: 4.86%;
+  left: 84.65%;
+  background: url(../assets/images/55a6f918-b9cf-4ae3-9ae6-cc750a8d1096.png)
+    no-repeat center;
+  background-size: 100% 100%;
+  z-index: 3;
+}
+.arrow {
+  position: absolute;
+  width: calc(1 * var(--rpx));
+  height: calc(1.2889459277687365e-8 * var(--rpx));
+  top: calc(40 * var(--rpx));
+  left: calc(30 * var(--rpx));
+  background: url(../assets/images/b813f9bd-b0c1-4d3e-a7c2-791a129173bc.png)
+    no-repeat center;
+  background-size: cover;
+}

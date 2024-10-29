@@ -1,0 +1,10 @@
+.main-container {
+    position: relative;
+    width: calc(430 * var(--rpx));
+   
+    margin: 0 auto;
+    background: #000000;
+    overflow: hidden;
+
+    color: #ffff;
+}
