@@ -22,11 +22,6 @@
       <div class="picture-bnb-5"></div>
       <span class="bnb-smart-chain-6">BNB Smart Chain</span><span class="zero-dollars-7">$ 0.00</span>
     </div>
-    <div class="flex-row-b">
-      <span class="span-0">0</span>
-      <div class="picture-bnb-8"></div>
-      <span class="bnb-smart-chain-9">BNB Smart Chain</span><span class="dollar-0">$ 0.00</span>
-    </div>
     <div class="flex-row-c">
       <span class="span-0-a">0</span>
       <div class="picture-bnb-b"></div>
@@ -35,6 +30,12 @@
   </div>
 </template>
 
-<script setup lang="javascript"></script>
+<script setup>
+import { inject } from 'vue';
+
+const globalInt = inject('globalInt');
+globalInt.value += 1;
+
+</script>
 
 <style src="../assets/select_network.css"></style>

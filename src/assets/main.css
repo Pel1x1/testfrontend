@@ -3,11 +3,21 @@
     Ubuntu, "Helvetica Neue", Helvetica, Arial, "PingFang SC",
     "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei",
     "Source Han Sans CN", sans-serif;
-  --rpx: 100vw / 430;
+    --rpx: 100dvw / 430;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
 }
 
 .main-container {
   overflow: hidden;
+  max-width: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 .main-container,
@@ -94,44 +104,33 @@ button:active {
 .switcher {
   display: flex;
   position: absolute;
-  background-color: #f0f0f0;
-  padding: 5px;
-  top: 0;
+  background-color: #404040;
+  padding: 0; 
   justify-content: space-between;
-  left: calc(121 * var(--rpx));
-  width: calc(119 * var(--rpx));
-  height: calc(22 * var(--rpx));
-  top: 0;
-  left: calc(121 * var(--rpx));
-  background: #404040;
-  z-index: 2;
-  overflow: hidden;
-  border-radius: calc(12 * var(--rpx));
+  width: calc(119 * var(--rpx) * 1.5); 
+  height: calc(22 * var(--rpx) * 1.5); 
+  top: 11px;
+  left: calc(90 * var(--rpx) );
+  border-radius: calc(12 * var(--rpx) * 1.5); 
 }
 
 .option {
   flex: 1;
   text-align: center;
-  padding: 10px 0;
-  align-items: flex-start;
-  justify-content: flex-start;
   cursor: pointer;
-  border-radius: calc(12 * var(--rpx));
   color: #959595;
   font-family: Montserrat, var(--default-font-family);
-  transition: background-color 0.3s;
-  transition: color 0.2s;
-  font-size: calc(10 * var(--rpx));
+  transition: background-color 0.3s, color 0.2s;
+  font-size: calc(10 * var(--rpx) * 1.5); 
   font-weight: 400;
-  line-height: calc(12 * var(--rpx));
-  text-align: center;
-  z-index: 5;
-  white-space: nowrap;
-}
+  line-height: calc(22 * var(--rpx) * 1.5); 
+  border-radius: calc(12 * var(--rpx) * 1.5);
 
+}
 .option.selected {
   background-color: #545454;
   color: #ffffff;
+  border-radius: calc(12 * var(--rpx) * 1.5);
 }
 
 .regroup {
@@ -166,6 +165,8 @@ button:active {
   z-index: 2;
 }
 
+
+
 .icon {
   position: absolute;
   width: calc(25.333251953125 * var(--rpx));
@@ -179,14 +180,15 @@ button:active {
 }
 
 .popup-menu {
-  position: absolute;
+  position: relative; 
   background-color: #1e1e1e;
   color: #ffffff;
   border: none;
   z-index: 1000;
-  border-radius: calc(12 * var(--rpx));
-  top: calc(0 * var(--rpx));
-  left: calc(-6 * var(--rpx));
+  text-align: left;
+  width: calc(392 * var(--rpx));
+  margin: calc(29 * var(--rpx)) 0 0 calc(19 * var(--rpx));
+  border-radius: calc(34 * var(--rpx));
 }
 
 .popup-menu ul {
@@ -195,24 +197,31 @@ button:active {
 }
 
 .popup-menu li {
-  padding: 10px;
+  display: flex; 
+  align-items: center; 
+  padding-left: calc(10 * var(--rpx));
   cursor: pointer;
 }
 
-.popup-menu li:hover {
-  background-color: #272727;
-  border-radius: calc(6 * var(--rpx));
-}
 .popup-menu li:active {
   background-color: #424242;
   transform: scale(0.98);
 }
 
 .popup-menu a {
-  text-decoration: none; /* Убираем подчеркивание */
-  color: inherit; /* Устанавливаем цвет текста по умолчанию */
   font-family: Montserrat, var(--default-font-family);
-  
+  text-decoration: none; 
+  padding: calc(10 * var(--rpx));
+  margin-left:calc(10 * var(--rpx));
+  font-size: calc(18 * var(--rpx));
+  color: inherit; 
+}
+
+.popup-menu li .icon_menu {
+  width: calc(20 * var(--rpx));
+  height: calc(20 * var(--rpx));
+  margin-right: calc(15 * var(--rpx)); 
+  margin-left: calc(15 * var(--rpx)); 
 }
 
 
@@ -294,10 +303,10 @@ button:active {
 }
 .btn-copy {
   position: absolute;
-  width: 8.29%;
-  height: 25.42%;
+  width: calc(15 * var(--rpx));
+  height: calc(15 * var(--rpx));
   top: 5.08%;
-  left: 90.54%;
+  left: 80.54%;
   background: url(../assets/images/e92445fd-06c6-49c2-bdac-1d6b07a370f0.png)
     no-repeat center;
   background-size: 100% 100%;
@@ -479,7 +488,7 @@ button:active {
 .ellipse-9 {
   position: absolute;
   width: calc(44 * var(--rpx));
-  height: calc(44.18147277832031 * var(--rpx));
+  height: calc(44 * var(--rpx));
   top: calc(6.4359130859375 * var(--rpx));
   left: calc(7 * var(--rpx));
   background: url(../assets/images/7fc67986-6224-44b2-88f0-c40ce407f2e5.png)

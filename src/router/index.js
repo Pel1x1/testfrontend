@@ -15,6 +15,10 @@ const router = createRouter({
       name: "main page",
       component: Main,
     },
+    { 
+      path: '/cryptos', 
+      component: () => import("../assets/components/CryptoListToSwap.vue"),
+    },
     {
       path: "/receive_address",
       name: "receive address",

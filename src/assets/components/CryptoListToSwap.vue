@@ -15,7 +15,7 @@
 
 <script>
 import axios from 'axios';
-import CryptoItem from './CryptoItem.vue';
+import CryptoItem from './CryptoItemToSwap.vue';
 
 const cryptoSymbols = {
   bitcoin: 'BTC',
@@ -68,10 +68,10 @@ export default {
         this.fetchCryptoData();
       }, 60000);
     }
-  },
+  }
 };
 </script>
 
 <style scoped>
-
+/* CSS код для CryptoList */
 </style>

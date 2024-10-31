@@ -12,5 +12,8 @@ export default defineConfig({
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
     }
+  },
+  build: {
+    cssCodeSplit: false, // Устанавливаем false для генерации одного CSS файла
   }
 })

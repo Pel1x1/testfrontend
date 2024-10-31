@@ -14,6 +14,12 @@
   </div>
 </template>
 
-<script setup lang="javascript"></script>
+<script setup>
+import { inject } from 'vue';
+
+const globalInt = inject('globalInt');
+globalInt.value += 1;
+
+</script>
 
 <style src="../assets/scan_qr.css"></style>
