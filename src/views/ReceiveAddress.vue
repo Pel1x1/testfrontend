@@ -19,4 +19,4 @@ globalInt.value += 1;
 
 </script>
 
-<style src="../assets/receive_address.css"></style>
+<style ></style>
