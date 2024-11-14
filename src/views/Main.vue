@@ -132,7 +132,7 @@ export default {
       <div v-else-if="selected === 'Wallet'" key="wallet" class="page wallet">
         <div class="rectangle-2">
           <div class="flex-column">
-            <span class="comma">{{balance.slice(0, 6)}}</span>
+           <span class="comma">{{ balance ? balance.slice(0, 6) : '0' }}</span>
             <div class="wallet-c-account">
               <span class="wallet-c">Wallet evm </span><span class="empty"> </span><span class="account"> {{ formatAddress(accountId) }} </span>
             </div>
