@@ -14,6 +14,6 @@ export default defineConfig({
     }
   },
   build: {
-    cssCodeSplit: false, // Устанавливаем false для генерации одного CSS файла
+    cssCodeSplit: false,
   }
 })
